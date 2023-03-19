@@ -38,7 +38,7 @@ export default class AuthController {
       request.res.cookie('sessionId', session.sessionId);
       return session;
     } catch (e) {
-      console.log('login error', e);
+      console.log('login errorr', e);
       throw new UnauthorizedException('Invalid email or password');
     }
   }
